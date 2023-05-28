@@ -15,9 +15,9 @@ import org.springframework.beans.factory.annotation.Value;
 public class CustomBotController {
 
     @Value("${openai.model}")
-    private String model;
+    String model;
     @Value("${openai.api.url}")
-    private String apiURL;
+    String apiURL;
 
     @Autowired
     private RestTemplate template;
